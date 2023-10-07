@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&family=Young+Serif&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+#remind{
+    display:flex;
+    color:white;
+    justify-content: center;
+    height:60px;
+    width:1500;
+    align-items: center;
+
+    background-color:#8f7966;
+}
+.table_header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    width:890px;
+    background-color: #fff4;
+    color:#fffdd0;
+}
+.table{   
+    background-image: url(library.jpg);bottom:20px;
+
+}
+table,th,td{
+   min-height: 100vh;
+   min-width: 30vh;
+   background-color: #fff5;
+   padding: 1rem;   
+}
+tbody{
+    color:#8B0000;
+    font-size:30px;
+}
+.calender{
+    top:100px;
+    right: 70px;
+    position:fixed;
+    
+}
+#reminder_calender{
+    color:#fffdd0;
+}
