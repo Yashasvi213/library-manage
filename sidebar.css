@@ -1,0 +1,194 @@
+@keyframes movement{
+    from{
+        top:0;
+        left:0;
+    }
+    to{
+        top:0px;
+        left:1200px;
+    }
+}
+
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    background-image: url("https://e0.pxfuel.com/wallpapers/609/657/desktop-wallpaper-giant-library-night-in-2020-book-background-book-books-library-aesthetic-laptop-thumbnail.jpg");
+}
+
+#remind{
+    display:flex;
+    color:white;
+    height:60px;
+    width:max-content;
+    background-color: #8f7966;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    animation-name: movement;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    
+}
+
+#remind:hover{
+    color:rgb(217, 29, 29);
+    font-size:40px ;
+}
+nav{
+    width:100%;
+    height:120px;
+    line-height:75px;
+    padding: 0px 100px;
+    position: fixed;
+    background-image: linear-gradient(#033747,#012733);
+}
+nav .logo p{
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+nav ul {
+    float:center;
+    
+}
+nav li{
+    display:inline-block;
+    list-style:none;
+}
+nav li a{
+    font-size:22px;
+    text-transform:uppercase;
+    padding:0px 30px;
+    color:white;
+    text-decoration: none;
+}
+nav li a:hover{
+    color:#ff8c69;
+    transition: all 0.4s ease 0%;
+}
+#selector{
+    font-size: 23px;
+    text-transform:uppercase;
+    font-weight: bold;
+    background-color:#033747 ;
+    color:white;
+    border:0px;
+    width:130px;
+}
+#selector:hover{
+    color:#ff8c69;
+}
+
+.sidebar{
+    position:fixed;
+    left:-250px;
+    width:250px;
+    height: 100%;
+    background: #042331;
+}
+.sidebar header{
+    color:white;
+    font-size:22px;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+}
+.sidebar ul a{
+    display:block;
+    height: 100%;
+    width:100%;
+    color: white;
+    line-height: 65px;
+    font-size: 20px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+   
+}
+ul li:hover a{
+    padding-left: 50px;
+}
+#check{
+    display:none;
+
+}
+label #btn,label #cancel{
+    position:absolute;
+    cursor:pointer;
+    background:#042331;
+    border-radius: 3px;
+
+}
+label #btn{
+    left:40px;
+    top:70px;
+    font-size: 35px;
+    color:white;
+    padding:6px 12px;
+    
+    transition: all .5s;
+}
+label #cancel{
+    z-index:1111;
+    left:-195px;
+    top:65px;
+    font-size: 30px;
+    color:#0a5275;
+    padding:4px 9px;
+    transition: all .5s ease;
+
+}
+#check:checked ~ .sidebar{
+    left:0;
+}
+#check:checked ~ label #btn{
+    left:250px;
+    opacity:0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left:195px;
+}
+.container{
+    margin-right:10px;
+    display:block;
+    color:white;
+    padding-bottom:10px;
+    font-size:30px;
+    text-decoration:none;
+
+}
+.title{
+    position:absolute;
+    top:30%;
+    left:50%;
+    
+    transform:translate(-50%,-50%);
+}
+.title h1{
+    color:#fff;
+    
+    font-size:70px;
+}
+
+.issuebook{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
